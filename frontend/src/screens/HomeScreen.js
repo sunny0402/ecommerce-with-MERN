@@ -10,7 +10,7 @@ const HomeScreen = () => {
         <Row>
             {products.map(
                 (product) => (
-                <Col sm={12} md={6} lg={4} xl={3}>
+                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                     {/* Product component will have a prop of product */}
                     {/* product is an invidual product from the product list */}
                     <Product product={product} />
@@ -21,4 +21,4 @@ const HomeScreen = () => {
   )
 }
 
-export default HomeScreen
+export default HomeScreen;
